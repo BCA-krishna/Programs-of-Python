@@ -12,8 +12,8 @@
 
 
 
-n = int(input())
-arr = map(int, input().split())
+# n = int(input())
+arr = list(map(int, input().split()))
 arr2 = []
     
 maxx=0
@@ -23,5 +23,5 @@ for i in arr:
     for j in arr:
         if maxx<arr[i]:
             arr2.append(arr[j])
-        ans=arr.max()
+        ans=max(arr)
 print(ans)

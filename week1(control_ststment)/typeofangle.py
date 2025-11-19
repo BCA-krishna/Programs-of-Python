@@ -1,14 +1,12 @@
-a1=int(input("enter the number"))
-if(a1<90):
-    print("acute angle")
-elif(a1==90):
+a1=int(input("enter the first angle"))
+a2=int(input("enter the second angle"))
+a3=int(input("enter the thord angle"))
+if (a1+a2+a3)!=180:
+    print("invalid angles")
+elif(a1==90 or a2==90 or a3==90):
     print("right angle")
-elif(a1>90 and a1<180):
-    print("straight angle")
-elif(a1>180 and a1<360):
-    print("reflex angle")
-elif(a1==360):
-    print("complete angle")
+elif (a1>90 or a2> 90 or a3>90):
+    print("obtuse angle")
 else:
-    print("invalid input")
+    print("acute angle")
 
